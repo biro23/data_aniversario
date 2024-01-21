@@ -1,17 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Evento de aniversário </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.scss">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <h2>Hola</h2>
-  <img src="./images/birthday-874783_1280.jpg" alt="">
+  <!-- criando o header hero -->
+  <header class="hero">
+    <div class="container">
+      <p class="hero__text">
+        <img src="./images/birthday-874783_1280.jpg" alt="Aniversario">
+        O maior evento do ano vai acontecer em 04/08/2024 ás 20:45ms
+      </p>
+      <div class="infos-bar">
+        <ul class="infos-bar__infos">
+          <li class="infos-bar__infos__item">
+            <b>Localização</b>
+            Poços de Caldas - Mg 
+          </li>
+          <li class="infos-bar__infos__item">
+            <b>Preço</b>
+            Ingresso a partir de R$ 350 para o maior evento do Ano
+          </li>
+          <li class="infos-bar__infos__item">
+            <b>Quando</b>
+            08/04/2024
+          </li>
+        </ul>
 
+        <a href="#" class="button button--primary">
+          Não perca essa Oportunidade
+        </a>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="events event--aniversario1  " >
+    <div class="container" data-aos="fade-right">
+      <div class="event__details">
+        <h2 class="event__details__titles">Aniversário 1 ano de Idade</h2>
+        <p class="event__details__descriptions">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio porro consequuntur dignissimos? Doloremque excepturi earum asperiores veritatis consequatur obcaecati sapiente, ex laudantium reprehenderit accusamus ad adipisci quaerat possimus quisquam voluptatibus!</p>
+      </div>
+      <img class="event__image" src="./images/happy-birthday-1212168_640.jpg" alt="Happy birthday">
+    </div>
+  </section>
+
+  <section class="events event--aniversario2  event--image-left" >
+    <div class="container" data-aos="fade-left">
+      <div class="event__details">
+        <h2 class="event__details__titles">Aniversário 2 ano de Idade</h2>
+        <p class="event__details__descriptions">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio porro consequuntur dignissimos? Doloremque excepturi earum asperiores veritatis consequatur obcaecati sapiente, ex laudantium reprehenderit accusamus ad adipisci quaerat possimus quisquam voluptatibus!</p>
+      </div>
+      <img class="event__image" src="./images/happy-birthday-1212168_640.jpg" alt="Happy birthday">
+    </div>
+  </section>
+
+  <section class="events event--aniversario3 event--image-left">
+    <div class="container" data-aos="fade-right">
+      <div class="event__details">
+        <h2 class="event__details__titles">Aniversário 3 ano de Idade</h2>
+        <p class="event__details__descriptions">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio porro consequuntur dignissimos? Doloremque excepturi earum asperiores veritatis consequatur obcaecati sapiente, ex laudantium reprehenderit accusamus ad adipisci quaerat possimus quisquam voluptatibus!</p>
+      </div>
+      <img class="event__image" src="./images/happy-birthday-1212168_640.jpg" alt="Happy birthday">
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./scripts/main.js"></script>
 
 </body>

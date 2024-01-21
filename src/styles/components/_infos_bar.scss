@@ -1,0 +1,42 @@
+@use "variables";
+
+.infos-bar {
+  padding: 16px 24px;
+  background-color: variables.$textColor;
+  display: flex;
+  justify-content: space-between;
+
+  &__infos {
+    display: flex;
+    gap: 40px;
+
+    &__items {
+      color: variables.$textColor;
+      font-size: 14px;
+
+      b {
+        color: varibales.$textColor;
+        font-size: 18px;
+        display: block;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+    width: 100%;
+
+    &__infos {
+      display: block;
+
+      &__items {
+        margin-bottom: 24px;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    &__infos {
+      gap: 16px;
+    }
+  }
+}

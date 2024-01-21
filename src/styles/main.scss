@@ -1,3 +1,33 @@
-body{
-  background-color: red;
+// importando o arquivo
+@use "hero";
+@use "components/infos_bar";
+@use "components/buttons";
+@use "event";
+@use "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  color: variables.$textColor;
+  list-style: none;
+}
+
+// class para para o container
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: 640px) {
+    // celular
+    max-width: 80%;
+  }
+
+  @media (max-width: 1024px) {
+    // tela de notbook
+    max-width: 90%;
+  }
 }
